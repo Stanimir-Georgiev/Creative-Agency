@@ -1,0 +1,16 @@
+html,
+body,
+#root {
+	height: 100%;
+}
+
+body {
+	font-size: var(--site-scale);
+	font-family: var(--global-font-family);
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}

@@ -1,0 +1,31 @@
+:root {
+	--global-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+	--color-solid-base: hsl(0, 0%, 13%);
+	--color-solid-base-lighter-1: hsl(0, 0%, 15%);
+	--color-solid-base-lighter-2: hsl(0, 0%, 17%);
+	--color-solid-base-lighter-3: hsl(0, 0%, 19%);
+
+	--color-primary: hsl(203, 78%, 49%);
+
+	--color-content: hsl(0, 0%, 0%);
+	--color-content-invert: hsl(0, 0%, 100%);
+
+	--color-separator: hsl(0, 0%, 87%);
+	--color-separator-invert: hsl(0, 0%, 30%);
+
+	// This will define the body font-size. Increase to zoom everything.
+	--site-scale: 16px;
+
+	--typography-size-xl: 1.5em;
+	--typography-size-l: 1.125em;
+	--typography-size-m: 1em;
+	--typography-size-s: 0.875em;
+
+	--border-radius: 5px;
+
+	// Layout spacing.
+	--layout-inner-spacing: 1em;
+	--layout-inner-spacing-l: 1.5em;
+}
