@@ -1,13 +1,13 @@
 import React from "react"
-import Header from "../AppHeader/AppHeader"
-import Footer from "../AppFooter/AppFooter"
+import Header from "../Header/Header"
+import Footer from "../Footer/Footer"
 import PropTypes from "prop-types"
 
 const Layout = ({ children, disableHeader = false, disableFooter = false }) => {
   return (
     <>
       {!disableHeader && <Header />}
-      {children}
+      <main className="site-main">{children}</main>
       {!disableFooter && <Footer />}
     </>
   )
