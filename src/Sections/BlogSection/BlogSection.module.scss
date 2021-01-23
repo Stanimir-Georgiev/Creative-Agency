@@ -1,7 +1,12 @@
+.blogSection {
+  background-color: var(--color-primary);
+  padding: 4em 0;
+}
+
 .blogPostGrid {
   display: grid;
-  padding: 2em;
+  padding: 2em 0;
   grid-template-columns: repeat(auto-fill, minmax(25em, 1fr));
-  grid-gap: 3em;
+  grid-gap: 5.5em;
   --postsSpacing: 1.5em 2em;
 }

@@ -1,0 +1,33 @@
+.post {
+  position: relative;
+
+  &Heading {
+    color: var(--color-content);
+    font-weight: 500;
+    font-size: 1.9em;
+  }
+
+  &Description {
+    color: #9fb8bd;
+    font-size: var(--typography-size-l);
+  }
+
+  &Image {
+    padding-bottom: 70%;
+    position: relative;
+    display: block;
+    transition: 1s;
+
+    &.imageLoading {
+      opacity: 0;
+      transition: 1s;
+    }
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
