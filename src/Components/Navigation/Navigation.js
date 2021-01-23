@@ -1,9 +1,8 @@
 import React from "react"
 import styles from "./Navigation.module.scss"
-import PropTypes from "prop-types"
 import NavigationItem from "./NavigationItem/NavigationItem"
 
-const Navigation = ({ location }) => {
+const Navigation = () => {
   const navigationItems = [
     { href: "/how-it-works", text: "How it works" },
     { href: "/portfolio", text: "Portfolio" },
@@ -24,10 +23,6 @@ const Navigation = ({ location }) => {
       </ul>
     </nav>
   )
-}
-
-Navigation.propTypes = {
-  location: PropTypes.string,
 }
 
 export default Navigation

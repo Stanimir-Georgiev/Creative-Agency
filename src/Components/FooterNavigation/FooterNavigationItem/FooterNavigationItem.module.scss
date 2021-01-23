@@ -1,0 +1,18 @@
+.footerNavigationItem {
+  list-style: none outside;
+
+  &:not(:last-child) {
+    margin: 0 2em;
+  }
+}
+
+.footerNavigationLink {
+  text-decoration: none;
+  display: block;
+  color: var(--color-content);
+  padding: 2em;
+}
+
+.footerNavigationItem:last-child a {
+  padding-right: 0;
+}

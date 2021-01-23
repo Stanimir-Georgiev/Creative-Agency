@@ -1,0 +1,11 @@
+.siteFooter {
+  background-color: var(--color-primary);
+}
+
+.footerInner {
+  border-top: 2px solid var(--color-separator);
+  padding: 2em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
