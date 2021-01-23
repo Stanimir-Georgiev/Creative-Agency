@@ -1,0 +1,7 @@
+.blogPostGrid {
+  display: grid;
+  padding: 2em;
+  grid-template-columns: repeat(auto-fill, minmax(25em, 1fr));
+  grid-gap: 3em;
+  --postsSpacing: 1.5em 2em;
+}
