@@ -1,5 +1,5 @@
 import React from "react"
-import NavigationStyles from "./Navigation.module.scss"
+import styles from "./Navigation.module.scss"
 import PropTypes from "prop-types"
 import NavigationItem from "./NavigationItem/NavigationItem"
 
@@ -7,15 +7,19 @@ const Navigation = ({ location }) => {
   const navigationItems = [
     { href: "/how-it-works", text: "How it works" },
     { href: "/portfolio", text: "Portfolio" },
-    { href: "/faq", text: "FAQ" },
-    { href: "/blog", text: "Blog", className: "borderLeft" },
-    { href: "/contact", text: "Contact Us" },
+    { href: "/faq", text: "FAQ", additionalClass: "border-right-item" },
+    { href: "/blog", text: "Blog", additionalClass: "border-left-item" },
+    { href: "/contact", text: "Contact Us", additionalClass: "button-link" },
   ]
   return (
-    <nav className={NavigationStyles.siteNavigation}>
-      <ul className={NavigationStyles.navigationList}>
+    <nav className={styles.siteNavigation}>
+      <ul className={styles.navigationList}>
         {navigationItems.map((navigationItem) => (
-          <NavigationItem href={navigationItem.href} text={navigationItem.text} />
+          <NavigationItem
+            href={navigationItem.href}
+            text={navigationItem.text}
+            additionalClass={navigationItem.additionalClass}
+          />
         ))}
       </ul>
     </nav>

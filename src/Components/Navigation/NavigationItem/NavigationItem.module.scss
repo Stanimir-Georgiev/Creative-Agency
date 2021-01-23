@@ -1,0 +1,32 @@
+.navigationItem {
+  list-style: none outside;
+  display: flex;
+}
+
+.navigationLink {
+  color: var(--color-content);
+  text-decoration: none;
+  padding: 0.85em 2em;
+}
+
+.borderLeftItem {
+  border-left: 1px solid var(--color-separator);
+}
+
+.borderLeftLink {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.borderRightLink {
+  padding-right: 3em;
+}
+
+.buttonLink {
+  color: var(--color-content-invert);
+  background-color: var(--color-content);
+  padding: 1.125em 2em;
+  line-height: 1;
+  font-weight: 500;
+  border: 1px solid #676e6f;
+}

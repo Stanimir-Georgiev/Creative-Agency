@@ -1,0 +1,10 @@
+.siteHeader {
+  background-color: var(--color-primary);
+  padding: 2em 0;
+}
+
+.headerInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
