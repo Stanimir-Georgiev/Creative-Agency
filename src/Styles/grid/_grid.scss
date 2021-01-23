@@ -10,6 +10,10 @@
   padding-right: var(--layout-inner-spacing);
 }
 
+.column-flex {
+  display: flex;
+}
+
 .small-1 {
   flex: 0 0 calc(100% / 12);
 }

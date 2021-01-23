@@ -36,7 +36,7 @@ const BlogSection = () => {
         <div className="columns small-12 large-6">
           <SectionHeading text="Light reading on architecture for you" />
         </div>
-        <div className="columns small-12 large-6">
+        <div className="columns small-12 large-6 column-flex">
           <a href="blog" className={styles.blogPageLink}>
             View all blogs
           </a>

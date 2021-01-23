@@ -3,10 +3,19 @@
   padding: 4em 0;
 }
 
+.blogPageLink {
+  color: var(--color-primary-lighter-1);
+  font-size: var(--typography-size-l);
+  font-weight: 600;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
 .blogPostGrid {
   display: grid;
   padding: 2em 0;
   grid-template-columns: repeat(auto-fill, minmax(25em, 1fr));
   grid-gap: 5.5em;
   --postsSpacing: 1.5em 2em;
+  margin-top: 4em;
 }
