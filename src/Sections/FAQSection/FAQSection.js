@@ -13,7 +13,7 @@ const FAQSection = () => {
     },
     {
       question: "How do you charge for the cost?",
-      asnwer: "Plashtai, plastai",
+      answer: "Plashtai, plastai",
       id: 2,
     },
     {
@@ -27,8 +27,8 @@ const FAQSection = () => {
       id: 4,
     },
     {
-      question: "Is this included wuth interior design?",
-      asnwer: "Ne, tui da ne e mandra, she plastash dopalnitelno",
+      question: "Is this included with interior design?",
+      answer: "Ne, tui da ne e mandra, she plastash dopalnitelno",
       id: 5,
     },
   ]
