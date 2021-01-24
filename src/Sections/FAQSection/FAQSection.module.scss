@@ -1,0 +1,16 @@
+.faqSection {
+  padding: var(--section-inner-spacing) 0;
+  background-color: var(--color-primary-lighter-2);
+}
+
+.mailSeparator {
+  font-size: var(--typography-size-xxl);
+  display: block;
+  margin-top: 2em;
+}
+
+.faqList {
+  margin: 0;
+  padding: 0;
+  margin-left: 3em;
+}

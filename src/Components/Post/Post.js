@@ -2,7 +2,7 @@ import React from "react"
 import styles from "./Post.module.scss"
 import Proptypes from "prop-types"
 
-const Post = ({ imgSrc, imgAlt, heading, description }) => {
+const Post = ({ imgSrc, imgAlt, heading, description, href }) => {
   // A check if there is an image set before we output it below.
   const imageTag = imgSrc ? (
     <picture className={styles.postImage}>
@@ -14,9 +14,11 @@ const Post = ({ imgSrc, imgAlt, heading, description }) => {
 
   return (
     <div className={styles.post}>
-      {imageTag}
-      <h3 className={styles.postHeading}>{heading}</h3>
-      <p className={styles.postDescription}>{description}</p>
+      <a href={href} className={styles.postLinkWrapper}>
+        {imageTag}
+        <h3 className={styles.postHeading}>{heading}</h3>
+        <p className={styles.postDescription}>{description}</p>
+      </a>
     </div>
   )
 }
@@ -26,6 +28,7 @@ Post.propType = {
   heading: Proptypes.string,
   description: Proptypes.string,
   imgAlt: Proptypes.string,
+  href: Proptypes.string,
 }
 
 export default Post

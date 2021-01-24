@@ -1,0 +1,26 @@
+.faqItem {
+  list-style: none outside;
+  cursor: pointer;
+
+  & + & {
+    padding-top: 3em;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--color-separator-lighter);
+    padding-bottom: 3em;
+  }
+}
+
+.question {
+  font-size: var(--typography-size-xxl);
+  color: var(--color-primary-darker-1);
+  font-weight: 400;
+}
+
+.answer {
+  display: none;
+  font-size: var(--typography-size-xxl);
+  color: var(--color-primary-darker-1);
+  font-weight: 400;
+}

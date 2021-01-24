@@ -12,6 +12,7 @@ const BlogSection = () => {
       heading: "Tips on arranging a reading room for your home",
       description:
         "Mattis vitae vestibulum aliquam eu augue. Commodo eget vitae cursus auctor aliquet.",
+      href: "",
     },
     {
       imgSrc:
@@ -20,6 +21,7 @@ const BlogSection = () => {
       heading: "Arranging work space near the kitchen",
       description:
         "Mattis vitae vestibulum aliquam eu augue. Commodo eget vitae cursus auctor aliquet.",
+      href: "",
     },
     {
       imgSrc:
@@ -28,6 +30,7 @@ const BlogSection = () => {
       heading: "Tips on arranging a small space in the apartment",
       description:
         "Mattis vitae vestibulum aliquam eu augue. Commodo eget vitae cursus auctor aliquet.",
+      href: "",
     },
   ]
   return (
@@ -50,6 +53,7 @@ const BlogSection = () => {
                 imgSrc={box.imgSrc}
                 heading={box.heading}
                 description={box.description}
+                href={box.href}
               />
             ))}
           </div>

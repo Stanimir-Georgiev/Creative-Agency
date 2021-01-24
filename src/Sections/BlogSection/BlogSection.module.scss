@@ -1,6 +1,6 @@
 .blogSection {
   background-color: var(--color-primary);
-  padding: 4em 0;
+  padding: var(--section-inner-spacing) 0;
 }
 
 .blogPageLink {
@@ -9,6 +9,10 @@
   font-weight: 600;
   align-self: flex-end;
   margin-left: auto;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .blogPostGrid {
