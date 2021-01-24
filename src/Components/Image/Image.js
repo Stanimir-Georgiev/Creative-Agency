@@ -17,7 +17,7 @@ const Image = ({ imgSrc, imgAlt, aspectRatio }) => {
   )
 }
 
-Image.PropTypes = {
+Image.propTypes = {
   imgSrc: PropTypes.string,
   imgAlt: PropTypes.string,
   aspectRatio: PropTypes.number,

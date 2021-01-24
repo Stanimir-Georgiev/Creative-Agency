@@ -13,6 +13,7 @@ const BlogSection = () => {
       description:
         "Mattis vitae vestibulum aliquam eu augue. Commodo eget vitae cursus auctor aliquet.",
       href: "",
+      id: 1,
     },
     {
       imgSrc:
@@ -22,6 +23,7 @@ const BlogSection = () => {
       description:
         "Mattis vitae vestibulum aliquam eu augue. Commodo eget vitae cursus auctor aliquet.",
       href: "",
+      id: 2,
     },
     {
       imgSrc:
@@ -31,6 +33,7 @@ const BlogSection = () => {
       description:
         "Mattis vitae vestibulum aliquam eu augue. Commodo eget vitae cursus auctor aliquet.",
       href: "",
+      id: 3,
     },
   ]
   return (
@@ -54,6 +57,7 @@ const BlogSection = () => {
                 heading={box.heading}
                 description={box.description}
                 href={box.href}
+                key={box.id}
               />
             ))}
           </div>

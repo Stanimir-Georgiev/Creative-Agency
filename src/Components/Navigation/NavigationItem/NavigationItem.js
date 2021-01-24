@@ -12,7 +12,6 @@ const NavigationItem = ({ href, text, additionalClass }) => {
         { [styles.borderRightItem]: additionalClass === "border-right-item" },
         { [styles.buttonItem]: additionalClass === "button-link" }
       )}
-      key={text}
     >
       <a
         href={href}

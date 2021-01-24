@@ -18,6 +18,7 @@ const Navigation = () => {
             href={navigationItem.href}
             text={navigationItem.text}
             additionalClass={navigationItem.additionalClass}
+            key={navigationItem.text}
           />
         ))}
       </ul>

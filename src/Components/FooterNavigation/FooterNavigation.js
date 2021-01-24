@@ -18,6 +18,7 @@ const FooterNavigation = () => {
         <FooterNavigationItem
           href={navigationItem.href}
           text={navigationItem.text}
+          key={navigationItem.text}
         />
       ))}
     </ul>
