@@ -20,7 +20,7 @@
   }
 
   &Description {
-    color: #9fb8bd;
+    color: var(--color-primary-darker-1);
     font-size: var(--typography-size-l);
   }
 }

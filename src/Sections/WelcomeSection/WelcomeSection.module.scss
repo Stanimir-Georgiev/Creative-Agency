@@ -2,3 +2,10 @@
   background-color: var(--color-primary);
   padding: var(--section-inner-spacing) 0;
 }
+
+.tabsList {
+  display: grid;
+  padding: 0;
+  grid-template-columns: repeat(auto-fill, minmax(25em, 1fr));
+  --postsSpacing: 1.5em 2em;
+}

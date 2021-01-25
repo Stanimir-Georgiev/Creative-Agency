@@ -1,0 +1,29 @@
+.tab {
+  list-style: none outside;
+  border-top: 2px solid var(--color-separator);
+  cursor: pointer;
+  padding: 0 2.5em;
+  transition: 0.6s ease-in-out;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.isActive {
+  border-color: var(--color-tab-border);
+}
+
+.tabHeading {
+  color: var(--color-content);
+  font-size: var(--typography-size-xxl);
+}
+
+.tabDescription {
+  color: var(--color-primary-darker-1);
+  font-size: var(--typography-size-l);
+}

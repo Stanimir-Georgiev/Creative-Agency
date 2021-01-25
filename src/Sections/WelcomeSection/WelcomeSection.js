@@ -1,10 +1,16 @@
-import React from "react"
+import React, { useState } from "react"
 import styles from "./WelcomeSection.module.scss"
 import PageHeading from "../../Components/PageHeading/PageHeading"
 import Image from "../../Components/Image/Image"
 import Tabs from "../../Components/Tabs/Tabs"
+import { act } from "react-dom/test-utils"
 
 const WelcomeSection = () => {
+  const [activeTab, setActiveTab] = useState(1)
+
+  const handleTapSwitch = (activeTabId) => {
+    setActiveTab(activeTabId)
+  }
   const tabs = [
     {
       tabHeading: "Scandinavian Design",
@@ -51,14 +57,12 @@ const WelcomeSection = () => {
       </div>
       <div className="row">
         <div className="columns small-12">
-          {images.map((image) => (
-            <Image
-              imgSrc={image.imgUrl}
-              imgAlt={image.imgAlt}
-              aspectRatio={56.25}
-              key={image.id}
-            />
-          ))}
+          <Image
+            imgSrc={images[activeTab - 1].imgUrl}
+            imgAlt={images[activeTab - 1].imgAlt}
+            aspectRatio={50}
+            key={activeTab - 1}
+          />
         </div>
       </div>
       <div className="row">
@@ -68,7 +72,10 @@ const WelcomeSection = () => {
               <Tabs
                 tabHeading={tab.tabHeading}
                 tabDescription={tab.tabDescription}
+                id={tab.id}
                 key={tab.id}
+                onClick={handleTapSwitch}
+                isActive={activeTab === tab.id}
               />
             ))}
           </ul>

@@ -13,7 +13,7 @@
 
 .question {
   font-size: var(--typography-size-xxl);
-  color: var(--color-primary-darker-1);
+  color: var(--color-primary-darker-2);
   font-weight: 400;
   display: flex;
   align-items: center;
@@ -41,9 +41,9 @@
 }
 
 .answer {
-  background-color: var(--color-primary-lighter-3);
+  background-color: var(--color-primary-lighter-2);
   font-size: var(--typography-size-xl);
-  color: var(--color-primary-darker-1);
+  color: var(--color-primary-darker-2);
   font-weight: 400;
   background-color: var(--color-content);
   display: block;
