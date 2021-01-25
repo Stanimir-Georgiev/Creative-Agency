@@ -7,7 +7,9 @@ const Layout = ({ children, disableHeader = false, disableFooter = false }) => {
   return (
     <>
       {!disableHeader && <Header />}
-      <main className="site-main">{children}</main>
+      <main className="site-main" id="main">
+        {children}
+      </main>
       {!disableFooter && <Footer />}
     </>
   )

@@ -1,9 +1,9 @@
 .tab {
   list-style: none outside;
   border-top: 2px solid var(--color-separator);
-  cursor: pointer;
   padding: 0 2.5em;
   transition: 0.6s ease-in-out;
+  cursor: pointer;
 
   &:first-child {
     padding-left: 0;
@@ -15,6 +15,11 @@
 
   &:hover {
     opacity: 0.6;
+  }
+
+  @media (max-width: 40em) {
+    padding: 0 1em;
+    font-size: var(--typography-size-s);
   }
 }
 

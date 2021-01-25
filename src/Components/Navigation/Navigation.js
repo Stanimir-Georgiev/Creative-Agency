@@ -1,7 +1,9 @@
 import React from "react"
 import styles from "./Navigation.module.scss"
 import NavigationItem from "./NavigationItem/NavigationItem"
-import { reveal as Menu } from "react-burger-menu"
+import { slide as MobileMenu } from "react-burger-menu"
+import { isMobile } from "react-device-detect"
+import mobileStyles from "./MobileNavigationStyles"
 
 const Navigation = () => {
   const navigationItems = [
@@ -11,7 +13,7 @@ const Navigation = () => {
     { href: "/blog", text: "Blog", additionalClass: "border-left-item" },
     { href: "/contact", text: "Contact Us", additionalClass: "button-link" },
   ]
-  return (
+  return !isMobile ? (
     <nav className={styles.siteNavigation}>
       <ul className={styles.navigationList}>
         {navigationItems.map((navigationItem) => (
@@ -24,6 +26,19 @@ const Navigation = () => {
         ))}
       </ul>
     </nav>
+  ) : (
+    <MobileMenu
+      styles={mobileStyles}
+      pageWrapId={"root"}
+      right
+      outerContainerId={"root"}
+      width={"70%"}
+      isOpen={false}
+    >
+      {navigationItems.map((navigationItem) => (
+        <a href={navigationItem.href}>{navigationItem.text}</a>
+      ))}
+    </MobileMenu>
   )
 }
 
