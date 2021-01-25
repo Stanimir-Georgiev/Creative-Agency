@@ -1,0 +1,22 @@
+.statisticsList {
+  display: grid;
+  padding: 2em 0;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+}
+
+.statisticsItem {
+  list-style: none outside;
+}
+
+.statisticHeading {
+  color: var(--color-primary-darker-1);
+  font-weight: 400;
+  font-size: var(--typography-size-xxl);
+}
+
+.statisticContent {
+  color: var(--color-content);
+  font-weight: 600;
+  font-size: 3em;
+  margin: 0;
+}
