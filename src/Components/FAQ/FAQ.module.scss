@@ -27,7 +27,12 @@
     background: url("../../Images/chevron-down-solid.svg") no-repeat center center;
     background-size: contain;
     margin-left: auto;
+    transition: 0.3s ease-out;
   }
+}
+
+.rotateArrow::after {
+  transform: rotate(-90deg);
 }
 
 .answerWrapper {

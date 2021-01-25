@@ -15,7 +15,13 @@ const FAQ = ({ question, answer }) => {
   }
   return (
     <li className={styles.faqItem}>
-      <span className={styles.question} onClick={handleAnswerVisibility}>
+      <span
+        className={cx(
+          { [styles.question]: true },
+          { [styles.rotateArrow]: isActive }
+        )}
+        onClick={handleAnswerVisibility}
+      >
         {question}
       </span>
       <div
