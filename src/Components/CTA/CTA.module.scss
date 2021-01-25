@@ -1,5 +1,5 @@
 .cta {
-  color: var(--cta-color);
+  color: var(--color-cta);
   font-size: var(--typography-size-l);
   font-weight: 600;
   align-self: flex-end;
@@ -9,4 +9,13 @@
   &:hover {
     opacity: 0.8;
   }
+}
+
+.darkerColor {
+  color: var(--color-cta-darker);
+}
+
+.marginBottom {
+  display: block;
+  margin-bottom: 6em;
 }

@@ -25,8 +25,8 @@ const AboutSection = () => {
               donec porritor auctor aenean orci, metus, leo, magnis.
             </p>
             <p className={styles.aboutSectionDescriptionParagraph}>
-              Mattis non venenatis, nisl fringilla urna quis tempor eu. Est magna
-              donec porritor auctor aenean orci, metus, leo, magnis.
+              Mattis vitae vestibulum aliquam eu augue. Commodo eget vitae cursus
+              auctor aliquet. Volutpat sit vulputate non aliquet tellus.
             </p>
             <CTA href="/about" text="Learn More" />
           </div>

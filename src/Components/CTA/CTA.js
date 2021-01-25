@@ -1,10 +1,18 @@
 import React from "react"
 import styles from "./CTA.module.scss"
 import PropTypes from "prop-types"
+import cx from "classnames"
 
-const CTA = ({ href, text }) => {
+const CTA = ({ href, text, additionalClass }) => {
   return (
-    <a href={href} className={styles.cta}>
+    <a
+      href={href}
+      className={cx(
+        { [styles.cta]: true },
+        { [styles.darkerColor]: additionalClass?.includes("darker-color") },
+        { [styles.marginBottom]: additionalClass?.includes("margin-bottom") }
+      )}
+    >
       {text}
     </a>
   )
@@ -13,6 +21,7 @@ const CTA = ({ href, text }) => {
 CTA.propTypes = {
   href: PropTypes.string,
   text: PropTypes.string,
+  additionalClass: PropTypes.string,
 }
 
 export default CTA

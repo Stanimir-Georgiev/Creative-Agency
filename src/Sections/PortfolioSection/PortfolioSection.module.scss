@@ -1,0 +1,11 @@
+.portfolioSection {
+  padding: var(--section-inner-spacing);
+}
+
+.porfolioList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}

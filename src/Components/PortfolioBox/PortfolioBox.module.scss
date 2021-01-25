@@ -1,0 +1,24 @@
+.portfolioBox {
+  list-style: none outside;
+  flex: 0 0 calc((100% / 2) - 4em);
+  margin-bottom: 8em;
+
+  &Heading {
+    color: var(--color-primary-darker-3);
+    font-size: 2.5em;
+  }
+
+  &Description {
+    color: var(--color-primary-darker-2);
+    font-size: var(--typography-size-xl);
+    max-width: 90%;
+  }
+
+  &Transform {
+    transform: translateY(-21.875em);
+  }
+
+  &NoMargin {
+    margin-bottom: 0;
+  }
+}

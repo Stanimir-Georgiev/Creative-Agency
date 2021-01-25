@@ -60,7 +60,7 @@ const WelcomeSection = () => {
           <Image
             imgSrc={images[activeTab - 1].imgUrl}
             imgAlt={images[activeTab - 1].imgAlt}
-            aspectRatio={50}
+            aspectRatio={70}
             key={activeTab - 1}
           />
         </div>

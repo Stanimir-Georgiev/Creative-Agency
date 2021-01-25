@@ -8,7 +8,12 @@ const SectionHeading = ({ text, additionalClass }) => {
     <h2
       className={cx(
         { [styles.sectionHeading]: true },
-        { [styles.colorPrimaryDarker]: additionalClass === "color-primary-darker" }
+        {
+          [styles.colorPrimaryDarker]: additionalClass?.includes(
+            "color-primary-darker"
+          ),
+        },
+        { [styles.marginBottom]: additionalClass?.includes("margin-bottom") }
       )}
     >
       {text}
