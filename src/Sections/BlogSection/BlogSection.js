@@ -40,10 +40,10 @@ const BlogSection = () => {
   return (
     <section className={styles.blogSection}>
       <div className="row">
-        <div className="columns small-12 large-6">
+        <div className="columns small-12 medium-6 large-6">
           <SectionHeading text="Light reading on architecture for you" />
         </div>
-        <div className="columns small-12 large-6 column-flex">
+        <div className="columns small-12 medium-6 large-6 column-flex">
           <CTA href="/blog" text="View all blogs" />
         </div>
       </div>

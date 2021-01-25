@@ -1,6 +1,7 @@
 import React from "react"
 import styles from "./Navigation.module.scss"
 import NavigationItem from "./NavigationItem/NavigationItem"
+import { reveal as Menu } from "react-burger-menu"
 
 const Navigation = () => {
   const navigationItems = [

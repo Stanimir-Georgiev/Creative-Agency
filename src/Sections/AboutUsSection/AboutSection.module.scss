@@ -1,6 +1,10 @@
 .aboutSection {
   background-color: var(--color-primary);
   padding: var(--section-inner-spacing);
+
+  @media (max-width: 40em) {
+    padding: 0 0 6em;
+  }
 }
 
 .aboutSectionDescriptionParagraph {

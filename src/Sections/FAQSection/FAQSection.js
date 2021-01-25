@@ -35,7 +35,7 @@ const FAQSection = () => {
   return (
     <section className={styles.faqSection}>
       <div className="row">
-        <div className="columns small-12 medium-12 large-6">
+        <div className="columns small-12 medium-6 large-6">
           <SectionHeading
             text="Everything you want to know. We'll ready"
             additionalClass="color-primary-darker"

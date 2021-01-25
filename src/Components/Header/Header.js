@@ -10,7 +10,7 @@ const Header = () => {
         <div className="columns small-12">
           <div className={styles.headerInner}>
             <Logo />
-            <Navigation location="header" />
+            <Navigation />
           </div>
         </div>
       </div>

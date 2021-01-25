@@ -37,14 +37,14 @@ const PortfolioSection = () => {
       imgAlt: "Club",
       heading: "Club Valentin",
       description:
-        "Lorem ipsum dolor sit, consectetur adipiscing elit. Lorem viverra in elit justo urna",
+        "Nai-qkata daskoteka v qmbol chuek. Tam sam izreastnal. Nai-maznata chalga w BG",
       id: 4,
     },
   ]
   return (
     <section className={styles.portfolioSection}>
       <div className="row">
-        <div className="columns small-6">
+        <div className="columns small-12 medium-6 large-6">
           <SectionHeading
             text="Out valuable works with the clients"
             additionalClass="color-primary-darker margin-bottom"

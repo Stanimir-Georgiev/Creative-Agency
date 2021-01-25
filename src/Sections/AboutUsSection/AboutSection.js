@@ -14,11 +14,11 @@ const AboutSection = () => {
   return (
     <section className={styles.aboutSection}>
       <div className="row">
-        <div className="columns small-12 large-6">
+        <div className="columns small-12 medium-6 large-6">
           <SectionHeading text="We always do work in structure and plan" />
           <StatisticsWidget statistcs={statistics} />
         </div>
-        <div className="columns small-12 large-6">
+        <div className="columns small-12 medium-6 large-6">
           <div className={styles.aboutSectionDescription}>
             <p className={styles.aboutSectionDescriptionParagraph}>
               Mattis non venenatis, nisl fringilla urna quis tempor eu. Est magna
