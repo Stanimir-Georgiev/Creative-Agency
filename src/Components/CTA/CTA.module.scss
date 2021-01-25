@@ -1,0 +1,12 @@
+.cta {
+  color: var(--cta-color);
+  font-size: var(--typography-size-l);
+  font-weight: 600;
+  align-self: flex-end;
+  margin-left: auto;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

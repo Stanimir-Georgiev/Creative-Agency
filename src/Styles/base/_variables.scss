@@ -8,7 +8,7 @@
   --color-primary-lighter-1: hsl(190, 25%, 70%);
   --color-primary-lighter-2: hsl(190, 56%, 94%);
 
-  --color-primary-darker-1: hsl(190, 19%, 68%);
+  --color-primary-darker-1: hsl(190, 30%, 80%);
   --color-primary-darker-2: hsl(189, 33%, 16%);
 
   --color-content: hsl(0, 0%, 100%);
@@ -19,6 +19,7 @@
   --color-separator-invert: hsl(0, 0%, 30%);
 
   --color-tab-border: hsl(173, 47%, 74%);
+  --cta-color: hsl(173, 59%, 78%);
 
   // This will define the body font-size. Increase to zoom everything.
   --site-scale: 16px;
@@ -35,5 +36,5 @@
   --layout-inner-spacing: 1em;
   --layout-inner-spacing-l: 1.5em;
 
-  --section-inner-spacing: 5em;
+  --section-inner-spacing: 5em 0;
 }

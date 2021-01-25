@@ -1,19 +1,6 @@
 .blogSection {
   background-color: var(--color-primary);
-  padding: var(--section-inner-spacing) 0;
-}
-
-.blogPageLink {
-  color: var(--color-primary-lighter-1);
-  font-size: var(--typography-size-l);
-  font-weight: 600;
-  align-self: flex-end;
-  margin-left: auto;
-  transition: 0.3s ease-in-out;
-
-  &:hover {
-    opacity: 0.8;
-  }
+  padding: var(--section-inner-spacing);
 }
 
 .blogPostGrid {

@@ -2,6 +2,7 @@ import React from "react"
 import styles from "./BlogSection.module.scss"
 import SectionHeading from "../../Components/SectionHeading/SectionHeading"
 import Post from "../../Components/Post/Post"
+import CTA from "../../Components/CTA/CTA"
 
 const BlogSection = () => {
   const Posts = [
@@ -43,9 +44,7 @@ const BlogSection = () => {
           <SectionHeading text="Light reading on architecture for you" />
         </div>
         <div className="columns small-12 large-6 column-flex">
-          <a href="blog" className={styles.blogPageLink}>
-            View all blogs
-          </a>
+          <CTA href="/blog" text="View all blogs" />
         </div>
       </div>
       <div className="row">

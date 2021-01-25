@@ -11,6 +11,11 @@
   display: block;
   color: var(--color-content);
   padding: 2em;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .footerNavigationItem:last-child a {
