@@ -2,10 +2,6 @@
   display: grid;
   padding: 2em 0;
   grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
-
-  @media (max-width: 40em) {
-    padding: 4em 0;
-  }
 }
 
 .statisticsItem {
@@ -21,6 +17,6 @@
 .statisticContent {
   color: var(--color-content);
   font-weight: 600;
-  font-size: 3em;
+  font-size: var(--heading-size-xl);
   margin: 0;
 }

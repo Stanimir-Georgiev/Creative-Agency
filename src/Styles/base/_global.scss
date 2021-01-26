@@ -13,14 +13,6 @@ body,
 body {
   font-size: var(--site-scale);
   font-family: var(--global-font-family);
-
-  @media (max-width: 64em) {
-    font-size: var(--typography-size-s);
-  }
-
-  @media (max-width: 48em) {
-    font-size: var(--typography-size-xs);
-  }
 }
 
 .app {

@@ -6,12 +6,12 @@ import FooterNavigation from "../FooterNavigation/FooterNavigation"
 const Footer = () => {
   return (
     <footer className={styles.siteFooter}>
-      <div className="row">
-        <div className="columns small-12">
-          <div className={styles.footerInner}>
-            <Logo />
-            <FooterNavigation />
-          </div>
+      <div className={`row ${styles.footerInner}`}>
+        <div className="columns small-3">
+          <Logo />
+        </div>
+        <div className="columns small-9">
+          <FooterNavigation />
         </div>
       </div>
     </footer>

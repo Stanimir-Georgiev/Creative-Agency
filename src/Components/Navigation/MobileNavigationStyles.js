@@ -1,8 +1,8 @@
 const styles = {
   bmBurgerButton: {
     position: "absolute",
-    width: "2em",
-    height: "2em",
+    width: "var(--typography-size-xxl)",
+    height: "var(--typography-size-xxl)",
     right: "1em",
     top: "2em",
   },
@@ -10,8 +10,8 @@ const styles = {
     background: "var(--color-content)",
   },
   bmCrossButton: {
-    height: "2em",
-    width: "2em",
+    height: "var(--typography-size-xxl)",
+    width: "var(--typography-size-xxl)",
   },
   bmCross: {
     background: "var(--color-content)",
@@ -27,7 +27,7 @@ const styles = {
     fontSize: "1.15em",
   },
   bmItemList: {
-    padding: "3em",
+    padding: "calc(var(--typography-size-m) * 2)",
   },
   bmItem: {
     display: "block",

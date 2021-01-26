@@ -1,31 +1,16 @@
 .footerNavigationItem {
   list-style: none outside;
-
-  &:not(:last-child) {
-    margin: 0 2em;
-
-    @media (max-width: 40em) {
-      margin: 0 1em;
-    }
-  }
 }
 
 .footerNavigationLink {
   text-decoration: none;
   display: block;
   color: var(--color-content);
-  padding: 2em;
+  padding: calc(var(--typography-size-s) * 2);
   transition: 0.3s ease-in-out;
+  font-size: var(--typography-size-l);
 
   &:hover {
     opacity: 0.8;
   }
-
-  @media (max-width: 40em) {
-    padding: 1em;
-  }
-}
-
-.footerNavigationItem:last-child a {
-  padding-right: 0;
 }

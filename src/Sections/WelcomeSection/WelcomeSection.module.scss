@@ -9,4 +9,8 @@
   margin-top: 3em;
   grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
   --postsSpacing: 1.5em 2em;
+
+  @media (max-width: 48em) {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
 }

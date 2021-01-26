@@ -43,7 +43,7 @@ const BlogSection = () => {
         <div className="columns small-12 medium-6 large-6">
           <SectionHeading text="Light reading on architecture for you" />
         </div>
-        <div className="columns small-12 medium-6 large-6 column-flex">
+        <div className="columns small-12 medium-6 large-6 column-flex margin-top-mobile">
           <CTA href="/blog" text="View all blogs" />
         </div>
       </div>

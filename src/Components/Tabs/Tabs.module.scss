@@ -17,9 +17,12 @@
     opacity: 0.6;
   }
 
-  @media (max-width: 40em) {
-    padding: 0 1em;
-    font-size: var(--typography-size-s);
+  @media (max-width: 48em) {
+    padding: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 2em;
+    }
   }
 }
 

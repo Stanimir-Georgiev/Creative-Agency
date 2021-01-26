@@ -26,12 +26,16 @@
   // This will define the body font-size. Increase to zoom everything.
   --site-scale: 16px;
 
+  --typography-size-xxxl: 2.5em;
   --typography-size-xxl: 1.75em;
   --typography-size-xl: 1.5em;
   --typography-size-l: 1.125em;
   --typography-size-m: 1em;
   --typography-size-s: 0.875em;
-  --typography-size-xs: 0.5em;
+
+  --heading-size-xxl: 4em;
+  --heading-size-xl: 3em;
+  --heading-size-l: 2.5em;
 
   --border-radius: 5px;
 
@@ -40,4 +44,23 @@
   --layout-inner-spacing-l: 1.5em;
 
   --section-inner-spacing: 7em 0;
+
+  @media (max-width: 64em) {
+    --typography-size-xxxl: 1.75em;
+    --typography-size-xxl: 1.5em;
+    --typography-size-xl: 1.25em;
+    --typography-size-l: 1em;
+    --section-inner-spacing: 4em 0;
+    --heading-size-xxl: 3em;
+    --heading-size-xl: 1.5em;
+    --heading-size-l: 1.25em;
+  }
+
+  @media (max-width: 48em) {
+    --typography-size-xxxl: 1.5em;
+    --typography-size-xxl: 1.25em;
+    --typography-size-xl: 1em;
+    --typography-size-l: 0.85em;
+    --heading-size-xxl: 2em;
+  }
 }
