@@ -13,6 +13,10 @@
   padding: 0;
   margin-left: 3em;
 
+  @media (max-width: 64em) {
+    margin: 0;
+  }
+
   @media (max-width: 48em) {
     margin: 4em 0 0;
   }

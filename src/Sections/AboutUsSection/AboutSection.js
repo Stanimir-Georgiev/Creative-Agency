@@ -19,17 +19,15 @@ const AboutSection = () => {
           <StatisticsWidget statistcs={statistics} />
         </div>
         <div className="columns small-12 medium-6 large-6">
-          <div className={styles.aboutSectionDescription}>
-            <p className={styles.aboutSectionDescriptionParagraph}>
-              Mattis non venenatis, nisl fringilla urna quis tempor eu. Est magna
-              donec porritor auctor aenean orci, metus, leo, magnis.
-            </p>
-            <p className={styles.aboutSectionDescriptionParagraph}>
-              Mattis vitae vestibulum aliquam eu augue. Commodo eget vitae cursus
-              auctor aliquet. Volutpat sit vulputate non aliquet tellus.
-            </p>
-            <CTA href="/about" text="Learn More" />
-          </div>
+          <p className={styles.aboutSectionDescriptionParagraph}>
+            Mattis non venenatis, nisl fringilla urna quis tempor eu. Est magna donec
+            porritor auctor aenean orci, metus, leo, magnis.
+          </p>
+          <p className={styles.aboutSectionDescriptionParagraph}>
+            Mattis vitae vestibulum aliquam eu augue. Commodo eget vitae cursus
+            auctor aliquet. Volutpat sit vulputate non aliquet tellus.
+          </p>
+          <CTA href="/about" text="Learn More" />
         </div>
       </div>
     </section>

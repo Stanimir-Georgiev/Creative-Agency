@@ -26,6 +26,15 @@
     margin-bottom: 0;
   }
 
+  @media (max-width: 64em) {
+    flex: 0 0 calc((100% / 2) - 2em);
+    margin-bottom: 4em;
+
+    &Transform {
+      transform: translateY(-12.875em);
+    }
+  }
+
   @media (max-width: 40em) {
     flex: 0 0 100%;
 
